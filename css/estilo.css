@@ -20,13 +20,13 @@ html{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 60%;
-    height: 100%;
+    width: 60vw;
+    height: 40vh;
 }
 
 .cabecalho img{
-    width: 30%;
-    max-width:30%;
+    width: 30vw;
+    max-width: 30vw;
     display: block;
 }
 
@@ -110,3 +110,11 @@ body{
     
 }
 
+/* BREAKPOINTS */
+
+@media (max-width:1500px) {
+    
+    body{
+        background-color: aqua;
+    }
+}
