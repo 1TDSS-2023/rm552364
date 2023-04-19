@@ -21,12 +21,12 @@ html{
     justify-content: space-around;
     flex-wrap: wrap;
     width: 60vw;
-    height: 40vh;
+    height: 42vh;
 }
 
 .cabecalho img{
-    width: 30vw;
-    max-width: 30vw;
+    width: 30%;
+    max-width: 30%;
     display: block;
 }
 
@@ -37,7 +37,7 @@ html{
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     color: #fff;
-    padding: 20% 0;
+    padding: 18.5vh 0;
     text-align: center;
 }
 
@@ -71,14 +71,14 @@ body{
 
 .tit-sec{
     text-align: center;
-    margin: 2% 0;
+    margin: 2vh 0;
     font-size: 2em;
 }
 
 .rodape {
     display: flex;
     justify-content: space-around;
-    margin: 5% 0 0 0 ;
+    margin: 5vh 0 0 0;
 }
 
 .rodape h2 {
@@ -90,9 +90,10 @@ body{
 .rodape nav {
     flex-grow: 6;
     display: flex;
-    width: 80%;
-    height: 100%;
+    width: 80vw;
+    height: 10vh;
     align-items: center;
+    background-color: #d9d9d9;
 }
 
 .rodape img {
