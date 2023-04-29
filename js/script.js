@@ -16,6 +16,3 @@ if(nome1 != ""){
     let nome1 = "Julia";
 }
 
-
-
-console.log(nome1);
