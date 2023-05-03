@@ -46,7 +46,7 @@ table{
 
 
 th, td{
-    border: solid 1px #dddddd;
+    border: solid 1px rgb(221, 221, 221);
     padding: 8px;
 }
 
@@ -55,7 +55,7 @@ tr:nth-child(even){
 }
 
 tr:hover{
-    background-color: #140f0fcc;
+    background-color: rgba(20, 15, 15, 0.8);
 }
 
 td[colspan]{
