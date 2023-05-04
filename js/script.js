@@ -45,3 +45,10 @@ this.setAttribute("style", `background-color: rgb(${r},${g},${b});`);
 //Leva dois parametros, evento e função
 //eventlistener adiciona um escutador de eventos que colocarmos dentro dela
 
+//<h2 class="tit-sec">Seçao de Fotos</h2>
+
+const h2Element = document.querySelector(".tit-sec");
+
+console.log(h2Element);
+
+//Estudar querySelectorAll()
