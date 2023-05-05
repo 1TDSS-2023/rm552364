@@ -51,28 +51,28 @@
 //console.log(h2Element);
 
 //Declaração de um ARRAY e seus métodos
-let frutas = ["banana","maça","laranja","morango","pera","uva","amora","abacaxi"];
-//Imprimindo um array
-console.log(frutas)
-console.log(frutas[0])
-//Verificando o tamanho do array usando o length
-console.log(`Tamanho do array é: ${frutas.length}`);
+// let frutas = ["banana","maça","laranja","morango","pera","uva","amora","abacaxi"];
+// //Imprimindo um array
+// console.log(frutas)
+// console.log(frutas[0])
+// //Verificando o tamanho do array usando o length
+// console.log(`Tamanho do array é: ${frutas.length}`);
 
-//Inserindo um item no FINAL do array com o metodo push(nomeItem)
-frutas.push("pêssego");
-console.log(frutas)
+// //Inserindo um item no FINAL do array com o metodo push(nomeItem)
+// frutas.push("pêssego");
+// console.log(frutas)
 
-//Inserindo um item no INICIO do array com o metodo unshift(nomeItem)
-frutas.unshift("kiwi");
-console.log(frutas)
+// //Inserindo um item no INICIO do array com o metodo unshift(nomeItem)
+// frutas.unshift("kiwi");
+// console.log(frutas)
 
-//REMOVENDO um item ao final do array com o metodo pop()
-frutas.pop();
-console.log(frutas)
+// //REMOVENDO um item ao final do array com o metodo pop()
+// frutas.pop();
+// console.log(frutas)
 
-//REMOVENDO um item no INICIO do array com o metodo shift()
-frutas.shift()
-console.log(frutas)
+// //REMOVENDO um item no INICIO do array com o metodo shift()
+// frutas.shift()
+// console.log(frutas)
 
 //LOCALIZANDO um item dentro do array com o metodo indexOf(nomeItem)
 //Obs: O metodo indexOf(nomeItem) retorno o indice do item
@@ -96,16 +96,33 @@ console.log(frutas)
 //     console.log("FRUTA DA VEZ: " + fruta);
 // });
 
-let nr1 = [1,2,3,4,5];
-let nr2 = [6,7,8,9,10];
-console.log(nr1)
-console.log(nr2)
-//Concatenando arrays em um novo array com o operador SPREAD(...)
-let nr3 = [...nr1, ...nr2];
-console.log("Itens do novo array: " + nr3);
-//Imprimindo o array com forEach
-nr3.forEach((nr)=>{
-    //nr.forEach((n)=>{
-        console.log("ITENS DO NOVO ARRAY " + nr);
-    //});
+// let nr1 = [1,2,3,4,5];
+// let nr2 = [6,7,8,9,10];
+// console.log(nr1)
+// console.log(nr2)
+// //Concatenando arrays em um novo array com o operador SPREAD(...)
+// let nr3 = [...nr1, ...nr2];
+// console.log("Itens do novo array: " + nr3);
+// //Imprimindo o array com forEach
+// nr3.forEach((nr)=>{
+//     //nr.forEach((n)=>{
+//         console.log("ITENS DO NOVO ARRAY " + nr);
+//     //});
+// });
+// const imgElements = [...document.getElementsByTagName("img")];
+// // for (let index = 0; index < imgElements.length; index++) {
+// //     console.log(imgElements[index].alt);
+// // }
+// //const imgElementsArray = [...imgElements];
+// imgElements.forEach((img)=>{
+//     img.setAttribute("width", "10%");
+// });
+
+const elements = [...document.querySelectorAll(".teste")]
+//console.log(elements);
+
+elements.forEach((el)=>{
+    if(el.tagName.toLowerCase() == "nav"){
+        console.log(el);
+    }
 });
