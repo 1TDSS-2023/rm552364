@@ -83,8 +83,29 @@ console.log(frutas)
 
 //Removendo um item do array com o metodo splice(indice do item, qtd de vezes que o indice sera removido)
 //Obs: Utilize o metodo indexOf(nomeItem) para descobrir o indice do item
-let indice = frutas.indexOf("amora");
-console.log(`Elemento do indice antes da remoção: ${frutas[indice]}`);
-frutas.splice(indice, 1);
-console.log(frutas)
-console.log(`Elemento do indice após a remoção: ${frutas[indice]}`);
+// let indice = frutas.indexOf("amora");
+// console.log(`Elemento do indice antes da remoção: ${frutas[indice]}`);
+// frutas.splice(indice, 1);
+// console.log(frutas)
+// console.log(`Elemento do indice após a remoção: ${frutas[indice]}`);
+
+// //Impressao do array em tabela usando o metodo table()
+// console.table(frutas)
+
+// frutas.forEach((fruta)=>{
+//     console.log("FRUTA DA VEZ: " + fruta);
+// });
+
+let nr1 = [1,2,3,4,5];
+let nr2 = [6,7,8,9,10];
+console.log(nr1)
+console.log(nr2)
+//Concatenando arrays em um novo array com o operador SPREAD(...)
+let nr3 = [...nr1, ...nr2];
+console.log("Itens do novo array: " + nr3);
+//Imprimindo o array com forEach
+nr3.forEach((nr)=>{
+    //nr.forEach((n)=>{
+        console.log("ITENS DO NOVO ARRAY " + nr);
+    //});
+});
